@@ -143,22 +143,9 @@ namespace CSR
 
         public static void onStart(MCCSAPI api)
         {
-            csapi.api = api;
             // TODO 此接口为必要实现
-            try
-            {
-                IronPythonRunner.IronPythonRuntime.RunIronPython(api);
-            }
-            catch(Exception e)
-            {
-                Console.WriteLine(e.Message);
-            }
-            
+            IronPythonRunner.IronPythonRuntime.RunIronPython(api);
             Console.WriteLine("[IronPythonRunner] 加载完成！");
         }
-    }
-    public class csapi 
-    {
-        public static MCCSAPI api;
     }
 }
