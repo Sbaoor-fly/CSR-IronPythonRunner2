@@ -1,7 +1,5 @@
 #! /usr/bin/env python
 # -*- coding:utf-8 -*-
-import tool
-import mc
 import json
 import time
 import thread
