@@ -1,0 +1,8 @@
+{
+	"time":10,
+	"reward_money":100,
+	"message":"§e您已在线§b10§e分钟，获得了§b%money%§e金币！",
+	"runcmd_at_reward":[
+		"execute %name% ~~~ playsound  mob.cat.meow  %name%"
+	]
+}

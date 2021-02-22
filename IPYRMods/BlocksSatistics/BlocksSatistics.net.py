@@ -9,20 +9,17 @@ if not IO.File.Exists('./plugins/BlocksSatistics/data.json'):
     IO.Directory.CreateDirectory('./plugins/BlocksSatistics')
     IO.File.WriteAllText('./plugins/BlocksSatistics/data.json','{}')
 countblock =json.loads(IO.File.ReadAllText('./plugins/BlocksSatistics/data.json'))
-def Blodestroyblock(a):
-    d = mc.AnalysisEvent(a)
+def Blodestroyblock(d):
     countblock[d.playername] += 1   
 def Bloplayer_left(a):
     tool.WriteAllText('./plugins/BlocksSatistics/data.json',json.dumps(countblock, sort_keys=True, indent=4, separators=(',', ': ')))
     
-def Bloload_name(a):
+def Bloload_name(d):
     global countblock
-    d = mc.AnalysisEvent(a)
     if not countblock.has_key(d.playername):
         countblock[str(d.playername)] = 0
         
-def Bloinputcommand(a):
-    d = mc.AnalysisEvent(a)
+def Bloinputcommand(d):
     if d.cmd == '/blsat':
         bb = ''
         for key in countblock:
