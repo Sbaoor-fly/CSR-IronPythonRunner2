@@ -34,7 +34,7 @@ def Bloinputcommand(a):
         bb = ''
         for key in countblock:
             bb += '§3'+key +'§r : §e'+str(countblock[key])+'\n'
-        mc.sendModalForm(GetUUID(d.playername),'§6方块挖掘榜',bb,'§2OK','§4取消')
+        mc.sendModalForm(BloGetUUID(d.playername),'§6方块挖掘榜',bb,'§2OK','§4取消')
         return False
 def BloGetUUID(plname):
     a = json.loads(mc.getOnLinePlayers())
