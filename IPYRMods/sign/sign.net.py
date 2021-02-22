@@ -1,8 +1,6 @@
 #! /usr/bin/env python
 # -*- coding:utf-8 -*-
 import json
-import mc
-import tool
 from System import IO
 import time
 import datetime
