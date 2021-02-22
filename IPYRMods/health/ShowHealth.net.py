@@ -4,8 +4,6 @@
 uuid = {}
 name = []
 player = 0
-from mc import *
-import tool
 import time
 import thread
 def healthcmdoutput(d):
