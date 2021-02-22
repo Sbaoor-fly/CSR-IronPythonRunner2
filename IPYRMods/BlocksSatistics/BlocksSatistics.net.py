@@ -18,25 +18,22 @@ def Bloload_plugin():
     print '[BlocksSatistics] 作者：Sbaoor'
     print '[BlocksSatistics] 新框架已适配'
     print '[BlocksSatistics] 当前版本：1.2.0'
-def Blodestroyblock(a):
-    d = mc.AnalysisEvent(a)
+def Blodestroyblock(d):
     countblock[d.playername] += 1   
 def Bloplayer_left(a):
     tool.WriteAllText('./plugins/BlocksSatistics/data.json',json.dumps(countblock, sort_keys=True, indent=4, separators=(',', ': ')))
     
-def Bloload_name(a):
+def Bloload_name(d):
     global countblock
-    d = mc.AnalysisEvent(a)
     if not countblock.has_key(d.playername):
         countblock[str(d.playername)] = 0
         
-def Bloinputcommand(a):
-    d = mc.AnalysisEvent(a)
+def Bloinputcommand(d):
     if d.cmd == '/blsat':
         bb = ''
         for key in countblock:
             bb += '§3'+key +'§r : §e'+str(countblock[key])+'\n'
-        mc.sendModalForm(GetUUID(d.playername),'§6方块挖掘榜',bb,'§2OK','§4取消')
+        mc.sendModalForm(BloGetUUID(d.playername),'§6方块挖掘榜',bb,'§2OK','§4取消')
         return False
 def BloGetUUID(plname):
     a = json.loads(mc.getOnLinePlayers())
