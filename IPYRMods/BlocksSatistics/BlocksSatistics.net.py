@@ -9,13 +9,6 @@ if not IO.File.Exists('./plugins/BlocksSatistics/data.json'):
     IO.Directory.CreateDirectory('./plugins/BlocksSatistics')
     IO.File.WriteAllText('./plugins/BlocksSatistics/data.json','{}')
 countblock =json.loads(IO.File.ReadAllText('./plugins/BlocksSatistics/data.json'))
-def Bloload_plugin():
-    mc.setCommandDescribe('blsat','查看挖掘榜')
-    thread.start_new_thread(gengxin,())
-    print '[BlocksSatistics] 装载成功'
-    print '[BlocksSatistics] 作者：Sbaoor'
-    print '[BlocksSatistics] 新框架已适配'
-    print '[BlocksSatistics] 当前版本：1.2.0'
 def Blodestroyblock(a):
     d = mc.AnalysisEvent(a)
     countblock[d.playername] += 1   
@@ -46,3 +39,7 @@ ipyapi.Listen('onLoadName',Bloload_name)
 ipyapi.Listen('onInputCommand',Bloinputcommand)
 ipyapi.Listen('onPlayerLeft',Bloplayer_left)
 ipyapi.Listen('onDestroyBlock',Blodestroyblock)
+mc.setCommandDescribe('blsat','查看挖掘榜')
+print '[BlocksSatistics] 装载成功'
+print '[BlocksSatistics] 作者：Sbaoor'
+print '[BlocksSatistics] 当前版本：1.2.0'
