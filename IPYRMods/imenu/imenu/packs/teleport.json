@@ -1,0 +1,34 @@
+﻿{
+    "title":"传送菜单",
+    "content":"按钮如下：",
+     "buttons": [
+        {
+            "text": "玩家传送",    
+            "cmd": [    
+                {
+                    "command": "/tpa", 
+                    "type": "default"    
+                }
+                ]
+        },
+        {
+            "text": "家园传送",
+            "cmd": [
+                {
+                    "command": "/home",
+                    "type": "default"
+                }
+            ]
+        },
+        {
+            "text": "回死亡点",
+            "cmd": [
+                {
+                    "command": "/back",
+                    "type": "default"
+                }
+            ]
+        }
+    ]
+}
+        

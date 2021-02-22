@@ -1,0 +1,52 @@
+﻿{
+    "title":"§测试菜单",
+    "content":"来点什么？：",
+     "buttons": [
+		{
+            "text": "点我获得钟",    
+            "cmd": [    
+                {
+                    "command": "give @s clock", 
+                    "type": "cmd"    
+                }
+                ]
+        },
+        {
+            "text": "传送系统",    
+            "cmd": [    
+                {
+                    "command": "teleport", 
+                    "type": "form"    
+                }
+                ]
+        },
+        {
+            "text": "OP系统",
+            "cmd": [
+                {
+                    "command": "op",
+                    "type": "form"
+                }
+            ]
+        },
+        {
+            "text": "商店",
+            "cmd": [
+                {
+                    "command": "/ishop",
+                    "type": "default"
+                }
+            ]
+        },
+        {
+            "text": "统计系统",
+            "cmd": [
+                {
+                    "command": "sat",
+                    "type": "form"
+                }
+            ]
+        }
+    ]
+}
+        

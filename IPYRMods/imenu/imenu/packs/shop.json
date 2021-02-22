@@ -1,0 +1,27 @@
+{
+    "title":"商店",
+    "content":"商品如下：",
+     "buttons": [
+        {
+            "text": "下界之星 | 50000/个",    
+            "cmd": [    
+                {
+                    "command": "give @s netherstar", 
+                    "type": "moneycmd",
+					"money":50000
+                }
+			]
+        },
+		{
+            "text": "烟花 | 1000/32个",    
+            "cmd": [    
+                {
+                    "command": "give @s firework_rocket 32", 
+                    "type": "moneycmd",
+					"money":1000
+                }
+            ]
+        }
+    ]
+}
+        

@@ -1,0 +1,25 @@
+{
+    "title":"OP菜单",
+    "content":"按钮如下：",
+     "buttons": [
+        {
+            "text": "白名单管理",    
+            "cmd": [    
+                {
+                    "command": "/wladmin", 
+                    "type": "opcmd"    
+                }
+                ]
+        },
+        {
+            "text": "经济管理",
+            "cmd": [
+                {
+                    "command": "/econadmin",
+                    "type": "default"
+                }
+            ]
+        }
+    ]
+}
+        

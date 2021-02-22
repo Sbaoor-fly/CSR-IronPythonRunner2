@@ -1,0 +1,25 @@
+{
+    "title":"统计系统",
+    "content":"信息如下：",
+     "buttons": [
+        {
+            "text": "查看在线时间",    
+            "cmd": [    
+                {
+                    "command": "/onlinetime", 
+                    "type": "default"
+                }
+            ]
+        },
+		{
+            "text": "查看挖掘榜",    
+            "cmd": [    
+                {
+                    "command": "/blsat", 
+                    "type": "default"
+                }
+            ]
+        }
+    ]
+}
+        
